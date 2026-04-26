@@ -1,0 +1,34 @@
+# Intelligent Fitness Tracking: Calorie Prediction & Pattern Discovery
+
+##  Problem Statement
+Accurate calorie estimation is vital for fitness tracking apps. This project utilizes physiological signals (Heart Rate, BMI, Duration) and contextual data to:
+1. **Predict** calories burned using Regression models.
+2. **Discover** hidden workout intensity clusters using Unsupervised Learning.
+
+##  Key Features
+- **Supervised Learning:** Compares Linear Regression, KNN, Random Forest, and XGBoost to achieve R² ≥ 0.80.
+- **Unsupervised Learning:** Uses PCA for feature compression and KMeans for user segmentation (Target Silhouette ≥ 0.15).
+- **Automated Preprocessing:** Handles outliers via IQR and automates feature scaling/encoding.
+
+## Tech Stack
+- **Languages:** Python 3.x
+- **Libraries:** Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn
+- **Validation:** 5-Fold Cross-Validation & Fixed Random Seeds (Seed 42)
+
+##  Results Summary
+- **Regression:** Achieved high precision for real-time calorie estimation.
+- **Clustering:** Identified 3 distinct physiological intensity profiles.
+"This project creates an intelligent fitness assistant that doesn't just guess calories, but actually understands a user's unique physiological response to exercise, allowing for personalized coaching and safer workout recommendations."
+
+
+Key Highlights:
+Supervised Learning: 
+	Implemented XGBoost and KNN Regressors to predict calorie expenditure with a target accuracy of $R^2 \geq 0.80$.
+Unsupervised Learning: 
+	Applied PCA for feature compression and KMeans Clustering to identify hidden workout intensity segments (Target Silhouette $\geq 0.15$).
+Data Pipeline: 
+	Automated preprocessing using IQR Outlier detection, One-Hot Encoding, and Standard Scaling.
+Validation:
+	Ensured strict reproducibility with Fixed Random Seeds and Cross-Validation.
+Business Goal: 
+	Providing real-time energy expenditure insights and personalized fitness coaching archetypes.
